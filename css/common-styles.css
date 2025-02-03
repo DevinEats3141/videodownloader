@@ -1,0 +1,101 @@
+/* News & Press Section */
+.news-press {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+/* Updated Logos Section */
+.logos-container {
+    padding: 20px;
+}
+
+.press-list {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 30px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.logo-item {
+    background: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 20px;
+    transition: transform 0.2s ease;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-item:hover {
+    transform: scale(1.05);
+}
+
+.logo-item img {
+    max-width: 100%;
+    max-height: 80px;
+    object-fit: contain;
+}
+
+/* Pagination Styling */
+.press-pagination {
+    margin-top: 50px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.press-pagination a {
+    padding: 5px 10px;
+    margin: 0 5px;
+    border: 1px solid #3740ff;
+    border-radius: 4px;
+    color: #3740ff;
+    text-decoration: none;
+}
+
+.press-pagination a:hover, .press-pagination a:active {
+    background: #3740ff;
+    color: #fff;
+}
+.press-pagination .jp-current {
+    background: #3740ff;
+    color: #fff;
+    border-color: #3740ff;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .press-list {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media (max-width: 992px) {
+    .press-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .press-list {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 15px; /* Reduced gap for mobile */
+    }
+    .logo-item {
+        height: 80px; /* Slightly smaller height for mobile */
+        padding: 15px; /* Reduced padding for mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    .press-list {
+        grid-template-columns: repeat(2, 1fr); /* Changed from 1 to 2 columns */
+        gap: 10px; /* Further reduced gap for smaller screens */
+    }
+    .logos-container{
+        padding: 5px;
+    }
+}

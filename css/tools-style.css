@@ -1,0 +1,423 @@
+@media only screen and (max-width:768px) {
+.mm_instagram_tool {
+width:60% !important;
+}	
+}
+@media only screen and (max-width:480px) {
+.mm_instagram_tool {
+width:100% !important;
+}	
+}
+.tools_list_box{margin:0px;padding:0px;}
+	.tools_list_box li{  display: inline-block;
+  position: relative;
+  background: none;
+  border: none;width:30%; 
+  cursor: pointer;border-radius: 3px;
+  margin: 10px;}.tools_list_box li a{display:inline-block; background: #fff;
+    padding: 30px;
+    border-radius: 3px;
+    text-align: center;    width: 100%;
+    }
+	.tools_list_box li a h2{    font-size: 16px;
+    color: #000;
+    margin-top: 10px;
+    font-weight: normal;}
+	.tools_list_box li::before, .tools_list_box li::after{
+  content:"";
+  width: 0;
+  height: 2px;
+  position: absolute;
+  transition: all 0.2s linear;
+  background: #3740ff;border-radius: 3px;
+}
+
+.tools_list_box li a::before, .tools_list_box li a::after{
+  content:"";
+  width:2px;
+  height:0;
+  position: absolute;
+  transition: all 0.2s linear;
+  background: #3740ff;
+}
+.tools_list_box li:hover::before, .tools_list_box li:hover::after{
+  width: 100%;
+}
+.tools_list_box li:hover a::before, .tools_list_box li:hover a::after{
+  height: 100%;
+}
+
+.tools_list_box li::before{
+	left:0;
+  top: 0;
+  transition-duration: 0.4s;
+}
+.tools_list_box li::after{
+	left:0;
+  bottom: 0;
+  transition-duration: 0.4s;
+}
+.tools_list_box li a::before{
+  left: 0;
+  top: 50%;
+  transition-duration: 0.4s;
+}
+.tools_list_box li a::after{
+  right: 0;
+  top: 50%;
+  transition-duration: 0.4s;
+}
+.tools_list_box li:hover::before, .tools_list_box li:hover::after{
+  left: 0;
+}
+.tools_list_box li:hover a::before, .tools_list_box li:hover a::after{
+  top: 0;
+}
+.tools_list_box.instagram_tools li{vertical-align:top;}
+.tools_list_box.instagram_tools li a h2{height:44px;}
+.tools_list_box.instagram_tools li a i{font-size:46px;}
+
+
+/*Tools Css*/
+.mm_instagram_tool{width:40%;margin:0 auto;position:relative;}
+.mm_instagram_tool .tool_form{background:#fff;padding:20px;border-radius:15px;}
+.mm_instagram_tool .tool_form label{width:100%;}
+.mm_instagram_tool .tool_form button{width:100%;
+    background: #000;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    height: 50px;    margin-top: 20px;}
+.mm_instagram_tool #username{width: 100%;
+    border-radius: 3px;
+    height: 50px;padding: 0px 20px;border:#d8d8d8 1px solid;}
+.insta_result{background:#fff;padding:20px;border-radius:15px;text-align:center;}
+.profile-circle{background: #d6249f;   width: 100%;height: 300px;    overflow: hidden;}
+.profile-circle img{width: 100%; overflow: hidden;/*margin: -50% 0;*/}
+  .insta_div_one{display:flex;}
+  .insta_div_two{display:grid;width: 75%;}
+  .ins_posts{text-align:center;grid-row-start: none;}
+  .ins_posts span{font-weight:bold;}
+  .full-name{font-size:22px;}
+  .biography{font-size:16px;margin-bottom: 15px;}
+  .insta_div_three{width:100%;margin-top:20px;display:inline-flex;    flex-direction: column;}
+  .insta_btn{    background: #3740ff;
+    color: #fff;
+    border: none;line-height: 32px;
+    border-radius: 3px;
+    height: 50px;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;    width: 100%;
+    text-align: center;
+    margin-top: 5px;}.insta_btn:hover{color:#fff;}
+	.zoom {
+    transition: transform .2s; /* Animation */
+    width: 200px;
+    height: 200px;
+}
+
+.zoom-in {
+    transform: scale(1.5); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+.preloader_box{ padding:40px;border-radius:15px; background-color: #ffffff;text-align: center;
+    color: #e99e0e;}
+.preloader {
+
+  z-index: 9999;
+}
+
+.preloader .spinner {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto; /* Center the spinner */
+  background-color: #333; /* Black spinner */
+  border-radius: 100%; /* Round corners */
+  -webkit-animation: sk-scaleout 1.0s infinite ease-in-out;
+          animation: sk-scaleout 1.0s infinite ease-in-out;
+}
+
+/*
+ * Animation styles
+ */
+
+@-webkit-keyframes sk-scaleout {
+  0% { -webkit-transform: scale(0) }
+  100% {
+    -webkit-transform: scale(1.0);
+    opacity: 0;
+  }
+}
+
+@keyframes sk-scaleout {
+  0% {
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  } 100% {
+    -webkit-transform: scale(1.0);
+    transform: scale(1.0);
+    opacity: 0;
+  }
+}
+.reach-limit{color: #ed0303;}
+.handle_available{color: #11b809;
+    background: #e2ffed;
+    width: 100%;
+    padding: 10px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 3px;}
+.handle_unavailable{    color: #ee1111;
+    background: #fecccc;
+    width: 100%;
+    padding: 10px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 3px;}
+.twit_reg{background: #1d9bf0;
+    color: #fff;
+    padding: 10px 30px;
+    border-radius: 5px;
+    margin-top: 10px;
+    display: inline-block;}.twit_reg:hover{color:#fff;}
+	.img_thumb{    width: 46%;
+    display: inline-block;
+    margin:2%}
+.tool_short{width: 50%;
+    margin: 0 auto;
+    border-radius: 5px;
+    font-size: 16px;
+    line-height: 26px;}
+.buy_insta {
+    text-align: center;background:#fff;
+    border: #000 3px dashed;
+    padding: 30px;
+    text-align: center;
+    border-radius: 15px;
+    margin-top: 20px;
+}
+
+.download_btn{    background: #000;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    height: 50px;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;    width: 100%;
+    text-align: center;line-height: 26px;margin-top:20px;
+}.download_btn:hover{color:#fff;}
+.buy_more{margin-top: 20px;margin-top: 20px;
+    border: #000 3px dashed;
+    padding: 20px;
+    border-radius: 15px;}.buy_more span{font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    width: 100%;
+    display: inline-block;}
+
+
+.section_type_tools {
+    background: #ecf3ff;
+    padding: 50px 0;
+}
+
+.section_type_services{
+	background:#fff;
+	padding:50px 5px
+}
+
+.tools-related-box {
+    text-align: center;
+    background: #fff;
+    padding: 30px;
+    display: flex;
+    border-radius: 10px;
+    flex-direction: column;
+}
+
+.tools-related-box h2 {
+    font-size: 22px;
+    padding: 10px 0px;
+}
+.tools-related-box p {
+    margin-bottom: 1rem;
+}
+.tools-related-box .most-purchased-icon {
+    display: inline-block;
+}
+.tools-related-box p span {
+    font-size: 38px;
+    font-weight: 800;
+}
+.tools-related-box .most-purchased-item {
+    display: inline-block;
+}
+
+.related-services-box {
+    background: #fff;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    height: 260px;
+    border-radius: 10px;
+    border: 1px solid #5200FE;
+}
+
+
+.related-services-box .most-purchased-icon {
+    display: inline-block;
+    margin-right: 10px;
+    vertical-align: top;
+}
+
+
+.related-services-box .most-purchased-item {
+    display: inline-block;
+}
+
+.related-services-box h2 {
+    font-size: 28px;
+}
+
+.btn_sample_format{color:#0e83ff;margin-left:5px;cursor:pointer;}
+.sample_handle_modal h4{margin-bottom:10px;}
+.sample_handle_modal li{list-style-type:none;font-size:15px;margin-bottom: 5px;}
+.sample_handle_modal .modal-title{line-height: 1.2;}
+.sample_handle_modal .modal-title span{font-size: 14px;}
+.sample_handle_modal li .fa-times-circle{color:red;}
+.sample_handle_modal li .fa-check-circle{color:green;}
+
+@media screen and (max-width: 1366px) {
+	
+	.tools-related-box h2,
+.related-services-box h2 {
+    font-size: 24px;
+}
+
+.tools-related-box p span, .related-services-box p span  {
+     font-size:  24px;
+}
+	
+}
+
+@media screen and (max-width: 1024px) {
+	.tools-related-box h2, .related-services-box h2 {
+    font-size: 24px;
+}
+}
+
+@media screen and (max-width: 1100px){
+	.tools_list_box li{width: 44%;}
+}
+@media screen and (max-width: 991px){
+	.mm_instagram_tool{width:100%;}
+	.tool_short{width: 100%;}
+	.section_type_tools {
+    margin: 0;
+    padding: 100px 0;
+}
+.section_type_services{
+	margin:0;
+	padding:100px 0}
+}
+@media screen and (max-width: 767px){
+	
+	.tools-related-box img, .related-services-box img{
+    display: inline-block;
+    height: auto;
+    width: 32px;
+}
+	
+	.tools-related-box h2, .related-services-box h2 {
+    font-size: 22px;
+}
+	
+	.tools-related-box .most-purchased-icon .related-services-box{
+    margin-right: 0;
+    display: block;
+}
+	
+	.tools-related-box .related-services-box{
+    padding: 20px;
+    display: block;
+    text-align: center;
+    height: auto;
+}
+	
+	.tools-related-box p span, .related-services-box p span{
+    font-size: 18px;
+}
+
+.tools_list_box li {
+    width: 47%;margin: 5px;
+	
+}
+.section_type_tools {
+    padding: 50px 5px;
+}
+.section_type_services{
+	padding:50px 0;
+}
+.tools_list_box li a h2{
+    font-size:13px;font-weight:normal;
+}
+.tools_list_box li a{
+padding: 30px 10px;
+}
+.tools_list_box.instagram_tools li a i {
+    font-size: 24px;
+}
+.tools_list_box.instagram_tools li a h2 {
+    height: 28px;
+}
+}
+@media screen and (max-width: 575px) {
+.tools-related-box h2, .related-services-box h2 {
+    font-size: 14px;
+}
+}
+@media screen and (max-width: 515px){
+.tools_list_box li {
+    width: 46%;
+}	
+}
+@media screen and (max-width: 414px){
+	.mm_instagram_tool #username {
+    width: 100%;
+	}
+	.mm_instagram_tool form button {
+    width: 100%;
+	margin-top:10px;
+	}
+
+	#html_element{overflow:auto;overflow-y: hidden;}
+	.img_thumb a{font-size: 12px; line-height: 14px;}
+	
+}
+/**cta button*/
+.styled-button {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #ff9f00;
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    padding: 10px 20px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top:20px;
+    width:100%;
+}
+
+.styled-button:hover {
+    background-color: #ff9f00;
+    color:black;
+}
+/**cta button*/
+
+
+
