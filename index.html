@@ -3502,52 +3502,6 @@ font-size:14px;font-weight:700;padding:10px 20px;line-height:20px;margin-bottom:
 </div>
 
 </div>
-
-
-<!--  recaptcha start -->
-
-<script>
-var fireds = false;
-window.addEventListener('scroll', function () {
-  let scroll = window.scrollY;
-  if (scroll > 0 && fireds === false) {
-    var recaptchaScripts = document.createElement('script');
-    recaptchaScripts.src = 'https://www.google.com/recaptcha/api.js';
-    recaptchaScripts.defer = true;
-    document.body.appendChild(recaptchaScripts);
-    fireds = true;
-   
-    // console.log('On scroll fired');
-  }
-}, true);
-var onloadCallback=function () {
-				setTimeout(function(){
-			grecaptcha.render("html_element", {
-				sitekey: "6Lck3vUbAAAAAGhgGBXv2ZzLnpzB8W70OMHRNEUJ"
-			});
-				},4000); 
-};
-function refreshCaptcha()
-	{
-		var img = document.images['captchaimg'];
-		img.src = img.src.substring(0,img.src.lastIndexOf("?"))+"?rand="+Math.random()*1000;
-	}
-var fired = false;
-window.addEventListener('scroll', function () {
-  let scroll = window.scrollY;
-  if (scroll > 0 && fired === false) {
-    var recaptchaScript = document.createElement('script');
-    recaptchaScript.src = 'https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit';
-    recaptchaScript.defer = true;
-    document.body.appendChild(recaptchaScript);
-    fired = true;
-   
-    // console.log('On scroll fired');
-  }
-}, true);
-</script>
-
-<!--  recaptcha end -->
 <!-- v2 footer section start -->
 <footer class="site-footer">
     <div class="container">
